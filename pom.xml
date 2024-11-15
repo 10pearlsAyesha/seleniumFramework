@@ -9,9 +9,10 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.7.2</version>
+    <version>4.10.0</version>
     <scope>test</scope>
 </dependency>
+
 <!-- https://mvnrepository.com/artifact/faker/faker -->
 <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
 <dependency>
@@ -53,7 +54,11 @@
     <artifactId>slf4j-simple</artifactId>
     <version>1.6.1</version>
 </dependency>
-
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.5.2</version>
+</dependency>
 <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 <dependency>
     <groupId>commons-io</groupId>

@@ -28,6 +28,7 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 
@@ -77,6 +78,8 @@ public class BaseClass{
 	}
 	else if(br.equals("edge")) {
 		System.setProperty("webdriver.edge.driver",readconfig.getedgepath());
+		EdgeOptions options = new EdgeOptions();
+		options.addArguments("--allow-revoked-certs");
 		driver= new EdgeDriver();
 		}
 

@@ -5,13 +5,13 @@
 <listener class-name="com.framework.ExtentReport.ExtentReporterNG"></listener>
 </listeners>
   <test thread-count="5" name="Test">
-  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="browser" value="edge"></parameter>
 
     <classes>
-   <!-- <class name="com.framework.testCase.TC_LoginPage_001"/> -->
-            <!--<class name="com.framework.testCase.TC_CreateClient"/> -->
-         <!-- <class name="com.framework.testCase.TC_CreateUser"/>-->
-         <class name="com.framework.testCase.StartNewValidation"/> 
+<class name="com.framework.testCase.TC_LoginPage_001"/>  
+          <class name="com.framework.testCase.TC_CreateClient"/>
+          <class name="com.framework.testCase.TC_CreateUser"/>
+          <class name="com.framework.testCase.StartNewValidation"/>
         
    
     </classes>
